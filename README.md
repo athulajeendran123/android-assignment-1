@@ -22,20 +22,20 @@ Both are implemented with optimal time complexity and are suitable for high-perf
 
 ##  Q1: LRU Cache (O(1) Operations)
 
-### 📌 Problem Statement
+###  Problem Statement
 
 Design a cache with a fixed capacity. It should support:
 
 - `get(key)`: Retrieve the value (if present), else return -1
 - `put(key, value)`: Insert or update the key. If the cache exceeds capacity, evict the least recently used item.
 
-### 🚀 Key Features
+###  Key Features
 
 - Uses `OrderedDict` from `collections` to maintain access order
 - Evicts least recently used key on overflow
 - All operations are **O(1)**
 
-### 🧠 Code Summary
+###  Code Summary
 
 ```python
 from collections import OrderedDict
@@ -59,7 +59,7 @@ class LRUCache:
             self.cache.popitem(last=False)
 ```
 
-### 🧪 Example Output
+###  Example Output
 
 ```python
 lru = LRUCache(2)
